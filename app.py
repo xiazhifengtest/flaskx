@@ -11,8 +11,8 @@ def homepage():
 
 
 @app.route('/test', methods=['GET', 'POST'])
-def gettest():
-    return 'gettest true'
+def get_test():
+    return 'get test true'
 
 
 if __name__ == "__main__":
