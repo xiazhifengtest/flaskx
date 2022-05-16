@@ -3,6 +3,11 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/a.dummy">
           <value>
             <set />
@@ -23,12 +28,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/gethflist.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/gettoken.py">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/login.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/new.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/templates/homepage.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/token.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/token.txt">
           <value>
             <set />
           </value>
