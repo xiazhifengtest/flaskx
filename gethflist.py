@@ -31,7 +31,7 @@ class hfTest(unittest.TestCase):
         # print(r.json())
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     # gettest=hfTest()
     # gettest.gethflist()
     unittest.main()

@@ -1,10 +1,11 @@
 import requests
 import config
-import  os
+import os
 
 
 def base_dir():
     return os.path.join(os.path.dirname(__file__), 'token.md')
+
 
 def login():
     url = config.address + 'uaa/oauth/token?ts=1'
@@ -17,10 +18,10 @@ def login():
     r = requests.post(url=url, data=data)
     token = r.json()["data"]["access_token"]
     Authorization = 'Bearer ' + token
+    # 获取到请求中的access_token加上bearer后写入到文件token.md中
     with open(base_dir(), 'w') as f:
         f.write(Authorization)
     # return Authorization
-
 
 # token写入到token.md文件中，测试用例可在使用时获取到该文件，则每个case获取一次，不用每个接口调用
 # 后续可能会不写入文件放在缓存中来使用
@@ -40,5 +41,5 @@ def login():
 #     with open('config.ini', 'w+') as  f:
 #         config.write(f)
 
-if __name__ == '__main__':
-    login()
+# if __name__ == '__main__':
+#     login()
