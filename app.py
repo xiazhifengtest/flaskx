@@ -1,5 +1,4 @@
-import flask.cli
-from flask import Flask,render_template
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -16,4 +15,4 @@ def get_test():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port='8080', debug=True, load_dotenv=True)
+    app.run(host='0.0.0.0', port=8080, debug=True, load_dotenv=True)
