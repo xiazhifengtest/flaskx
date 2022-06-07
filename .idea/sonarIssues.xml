@@ -13,6 +13,21 @@
             <set />
           </value>
         </entry>
+        <entry key="01a891bf-99c4-4434-b409-6931f2d03c7c.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="01a891bf-99c4-4434-b409-6931f2d03c7c/schema/relocation_base/table/system_message_box.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/01a891bf-99c4-4434-b409-6931f2d03c7c/console.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app.py">
           <value>
             <set />

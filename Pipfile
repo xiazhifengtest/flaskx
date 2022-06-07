@@ -6,6 +6,12 @@ name = "pypi"
 [packages]
 flask = "*"
 requests = "*"
+flask-login = "*"
+werkzeug = "*"
+itsdangerous = "*"
+flask-email = "*"
+flask-bootstrap = "*"
+flask-wtf = "*"
 
 [dev-packages]
 
