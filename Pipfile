@@ -12,6 +12,7 @@ itsdangerous = "*"
 flask-email = "*"
 flask-bootstrap = "*"
 flask-wtf = "*"
+flask-script = "*"
 
 [dev-packages]
 

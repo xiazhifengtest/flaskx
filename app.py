@@ -24,8 +24,21 @@ def badrq():
     return response
 
 
+@app.route('/user/<name>')
+def user(name):
+    return render_template('user.html', name=name)
+
+
+# @app.route('/user/<id>')
+# def get_user(id):
+#     user=laod_user(id)
+#     if not user:
+#         abort(404)
+#     return '<h1>hell ,%s</h1>'% user.name
+
+
 @app.route('/test', methods=['GET', 'POST'])
-# 请求方式在mothods中，已列表形式存在
+# 请求方式在mothods中，以列表形式存在
 def get_test():
     return 'get test true'
 

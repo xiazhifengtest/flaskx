@@ -28,6 +28,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Pipfile">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Pipfile.lock">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app.py">
           <value>
             <set />
@@ -64,6 +74,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/templates/homepage.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/templates/user.html">
           <value>
             <set />
           </value>
