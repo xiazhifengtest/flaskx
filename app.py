@@ -1,5 +1,7 @@
+import json
+
 import flask.cli
-from flask import Flask, abort, render_template, request, redirect, url_for, make_response
+from flask import Flask, abort, render_template, request, redirect, url_for, make_response, jsonify
 
 app = Flask(__name__)
 
@@ -59,6 +61,33 @@ def go_back(year):
 @app.before_request
 def do_it():
     pass  # 该方法会在每个请求执行之前运行一次
+
+
+@app.route('/json/')
+def jsonx():
+    data = {
+        'name': '夏志峰'
+    }
+    '''
+    输入json格式参数，返回时直接使用jsonfly返回格式为json的json串，旧版存在ascli编码问题，新版直接转化不需要关闭
+    '''
+    # response= make_response(json.dumps(data,ensure_ascii=False))
+    # response.mimetype='application/json'
+    return jsonify(data)
+
+
+@app.route('/abc', methods=['GET', 'POST'])
+def abc():
+    if request.method=='GET':
+        return render_template('homepage.html')
+    if request.method=='POST':
+        name=request.form.get('name')
+        password=request.form.get('password')
+        if name=='xiazhifeng' and password=='123':
+            return 'login pass'
+        else:
+            abort(500)
+            return None
 
 
 if __name__ == "__main__":
