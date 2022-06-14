@@ -78,16 +78,22 @@ def jsonx():
 
 @app.route('/abc', methods=['GET', 'POST'])
 def abc():
-    if request.method=='GET':
+    if request.method == 'GET':
         return render_template('homepage.html')
-    if request.method=='POST':
-        name=request.form.get('name')
-        password=request.form.get('password')
-        if name=='xiazhifeng' and password=='123':
+    if request.method == 'POST':
+        name = request.form.get('name')
+        password = request.form.get('password')
+        if name == 'xiazhifeng' and password == '123':
             return 'login pass'
         else:
             abort(500)
             return None
+
+
+# 定义错误执行步骤
+@app.errorhandler(404)
+def error_html(err):
+    return render_template('404.html')
 
 
 if __name__ == "__main__":
