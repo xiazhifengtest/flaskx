@@ -17,7 +17,6 @@ def get_agent():
 
 @app.route('/404')
 def badrq():
-    # return '<h1>bad request</h1>', 400
     response = make_response('<h1>a cokie</h1>')
     response.set_cookie('answer', '42')
     return response
@@ -28,14 +27,6 @@ def user(name):
     return render_template('user.html', name=name)
 
 
-# @app.route('/user/<id>')
-# def get_user(id):
-#     user=laod_user(id)
-#     if not user:
-#         abort(404)
-#     return '<h1>hell ,%s</h1>'% user.name
-
-
 @app.route('/test', methods=['GET', 'POST'])
 # 请求方式在mothods中，以列表形式存在
 def get_test():
@@ -44,8 +35,6 @@ def get_test():
 
 @app.route('/hello/')
 def hello():
-    # name = request.args.get('name', 'flask')
-    # return '<h1>hello %s</h1>' % name
     """redicter重定向至指定url，也可使用url——for指定地址"""
     return redirect(url_for('get_test'))
 

@@ -1,0 +1,5 @@
+
+upython:S117"^Rename this local variable "Authorization" to match the regular expression ^[_a-z][a-z0-9_]*$.(Å³œƒ
+;python:S125"Remove this commented out code.(Àð‹‡ÿÿÿÿÿ
+;python:S125,"Remove this commented out code.(¿œØóûÿÿÿÿ
+Kpython:S1135"4Complete the task associated to this "TODO" comment.(¢Ç›3
