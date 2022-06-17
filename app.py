@@ -1,6 +1,3 @@
-import json
-
-import flask.cli
 from flask import Flask, abort, render_template, request, redirect, url_for, make_response, jsonify
 
 app = Flask(__name__)
